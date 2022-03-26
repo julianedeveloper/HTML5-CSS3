@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        body{
+            
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        a {
+            color: #001021;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited{
+            color: #034748;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#1481BA;
+            text-decoration: none;
+        }
+        a:active{
+            color: #11B5E4;
+            text-decoration: none;
+        }
+        a::before{
+            content: '☞';
+        }
+        a::after{
+            content: '☜';
+            text-decoration: none;
+            font-weight: normal;
+            color: #034748;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">GitHub Repository</a></li>
+        <li><a href="https://youtube.com/cursoemvideo">YouTube Channel</a></li>
+        <li><a href="https://www.cursoemvideo.com.br">Curso em Vídeo Website</a></li>
+    </ul>
+</body>
+</html>

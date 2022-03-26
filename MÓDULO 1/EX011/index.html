@@ -1,0 +1,33 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mídias em Html 5 </title>
+        </head>
+        <body>
+            <h1>Imagens Dinâmicas</h1>
+            <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+            <picture>
+                <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+                <img src="images/foto-g.png" alt="imagem flexível">
+            </picture>
+
+            <h1>Reproduzindo Aúdio</h1>
+            <p>Vamos inserir aúdio no Html 5 </p>
+            <audio preload="metadata" controls>
+                <source src="mídias/guanacast.mp3" type="audio/mpg">
+                <source src="mídias/guanacast.ogg" type="audio/ogg">
+                <source src="mídias/guanacast.wav" type="audio/wav">
+            </audio>
+
+            <p>Em caso do seu navegador não for compatível com o arquivo, faço o download no link abaixo:
+            </p>
+
+            <a href="mídias/happymistake.mp3">  a <strong> 
+                HAPPY MISTAKE </strong> here</a>
+        </body>
+        </html>
