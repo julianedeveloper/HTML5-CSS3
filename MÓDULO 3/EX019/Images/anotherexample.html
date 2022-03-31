@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Alignment</title>
+    <style>
+        :root{
+            --corgreen1: #ADF6B1;
+            --corgreen2: #A1E5AB;
+            --corblue1: #90BAAD;
+            --corblue2: #8AA2A9;
+            --corblue3: #717C89;
+        }
+
+        main{
+            background-color: antiquewhite;
+            height: 100px;
+        }
+
+        main > a{
+            text-decoration: none;
+            text-align: center;
+            padding: 30px;
+            margin: 50px;
+            color: var(--corblue3);
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+
+        main > a:hover {
+            color: darkorange;
+        }
+
+        #container {
+            position: relative;
+            height: 100vh;
+            background-color: var(--corgreen2);
+            padding: 15px;
+        }
+
+        #content {
+            position: absolute;
+            height: 30%;
+            width: 30%;
+            background-color: var(--corblue3);
+            
+            top: 50%;
+            left: 50%;
+            transform: translate(-150%, -150%);
+
+            color: white;
+            font-family: sans-serif cursive;
+            font-weight: bold;
+            font-size: 2em ;
+            text-align: center;
+
+        }
+
+        #content2{
+            position: absolute;
+            height: 30%;
+            width: 30%;
+            background-color: rgb(253, 198, 95);
+            
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            color: white;
+            font-family: sans-serif cursive;
+            font-weight: bold;
+            font-size: 2em ;
+            text-align: center;
+        }
+
+        #content3{
+            position: absolute;
+            height: 30%;
+            width: 30%;
+            background-color: var(--corblue2);
+            
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 50%);
+
+            color: white;
+            font-family: sans-serif cursive;
+            font-weight: bold;
+            font-size: 2em ;
+            text-align: center;
+        }
+
+        p{
+            margin: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <a href="backgroundseven.html"> back to here</a>
+    </main>
+    <section id="container">
+        <article id="content">
+            <p> this is a simple example</p>
+        </article>
+        <article id="content2">
+            <p>developed by me</p>
+        </article>
+        <article id="content3"> 
+            <p>of vertical alignment</p>
+        </article>
+    </section>
+</body>
+</html>
