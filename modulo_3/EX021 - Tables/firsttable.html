@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        table {
+            width: 400px;
+            border-collapse: collapse; /*separated it's the value default*/
+        }
+
+        tr.row{
+            background-color: lightcoral;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        td#value {
+            background-color: yellow;
+            border: 1px solid red;
+        }
+
+        /*
+        .numero {
+            text-align: right;
+            font-weight: bolder;
+        }
+        */
+    </style>
+</head>
+<!--A simple table order:
+table = tabela;
+TR = table row = table line;
+TH = table header = head of the table, like a title;
+TD = table data = the data, the informations in the line of the table.
+-->
+<body>
+    <h1>A table example</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr class="row">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr>
+            <td id="value">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
