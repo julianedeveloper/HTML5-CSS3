@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+ ID corresponds # in CSS.
+ CLASS corresponds . in CSS. 
+*/
+
+body{
+    font-family: sans-serif;
+    background-color:#E0E0E2;
+    color: #416788;
+    
+
+}
+
+h1{
+    font-style: italic;
+    font-weight: bolder;
+    background-color: #416788;
+    color: #e0e0e2;
+}
+
+#main {
+    text-emphasis: initial;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    
+}
+
+h2 {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.basic {
+    color: #0E1428;
+    font-weight: bolder;
+}
+
+.intermediary {
+    color: #F0A202;
+    font-weight: bolder;
+}
+
+.advanced {
+    color: #930707;
+    font-weight: bolder;
+}
